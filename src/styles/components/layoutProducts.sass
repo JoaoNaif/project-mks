@@ -1,0 +1,100 @@
+@use '../variables'
+.container-products
+    background: #fff
+    display: flex
+    flex-direction: column
+    height: 500px
+    border-radius: 10px
+    overflow: hidden
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3)
+                
+    .products-figure
+        padding: .7rem
+        height: 60%
+
+        @media (max-width: 1024px) 
+            font-size: 20px
+            height: 50%
+
+        @media (max-width: 425px) 
+            padding: 0
+            height: 50%
+                
+        .products-image
+            width: 100%
+            height: 100%
+                
+        
+    .container-info
+        height: 30%
+        display: flex
+        flex-direction: column
+        gap: 10px
+        padding: 0 1.1rem
+
+        @media (max-width: 1024px) 
+            font-size: 20px
+            height: 35%
+
+        @media (max-width: 425px) 
+            height: 30%
+        
+
+        .first-container-info
+            display: flex
+            justify-content: space-between
+            align-items: flex-start
+                
+            .name-product-info
+                font-size: 25px
+                font-weight: 500
+                color: variables.$price-color
+
+                @media (max-width: 1024px) 
+                    font-size: 20px
+
+                @media (max-width: 425px) 
+                    font-weight: bold
+
+
+            .price-product-info
+                font-weight: 600
+                font-size: 20px
+                padding: .3rem
+                border-radius: 5px
+                color: variables.$bg-color
+                background: variables.$price-color
+
+                @media (max-width: 1024px) 
+                    font-size: 15px
+
+
+        .desc-product-info
+            color: variables.$price-color
+            font-size: 15px
+
+                    
+
+    .button-buy-info
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 10px
+        height: 10%
+        border: 0
+        color: variables.$bg-color
+        background: variables.$default-color
+        cursor: pointer
+
+        @media (max-width: 1024px) 
+            font-size: 20px
+            height: 15%
+
+        @media (max-width: 425px) 
+            height: 20%
+
+        .button-icon-bag
+            font-size: 25px
+
+        .button-buy
+            font-size: 25px        

@@ -1,0 +1,46 @@
+@use '../variables'
+
+#container-main
+    width: 80%
+    padding: 30px
+
+    @media (max-width: 1024px) 
+        width: 90%
+
+    @media (max-width: 768px) 
+        width: 90%
+        padding: 30px 0
+
+    @media (max-width: 425px) 
+        width: 90%
+        padding: 30px 0
+
+    .loading
+        width: 3rem
+        height: 3rem
+        background: transparentize
+        border-radius: 100%
+        border: 5px dotted #90EE90
+        border-right: none
+    
+    #container-grid
+        list-style: none
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        gap: 1rem
+
+        @media (max-width: 1024px) 
+            grid-template-columns: repeat(3, 1fr) 
+
+        @media (max-width: 768px) 
+            grid-template-columns: repeat(2, 1fr) 
+
+        @media (max-width: 425px) 
+            grid-template-columns: repeat(1, 1fr) 
+
+        
+
+    
+  
+            
+

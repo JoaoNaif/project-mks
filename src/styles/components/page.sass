@@ -1,0 +1,17 @@
+@use '../variables'
+.container
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    min-height: 100vh
+    background: variables.$bg-color
+
+    .footer
+        background: #ccc
+        width: 100%
+        text-align: center
+        padding: .3rem 0
+
+        @media (max-width: 425px) 
+            font-size: 13px
